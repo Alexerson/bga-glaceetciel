@@ -3,7 +3,7 @@
 <!-- 
 --------
 -- BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
--- GlaceEtCiel implementation : © <Your name here> <Your email address here>
+-- GlaceEtCiel implementation : © <Alexandre Spaeth> <alexandre[at]spaeth.dev>
 -- 
 -- This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
 -- See http://en.boardgamearena.com/#!doc/Studio for more information.
@@ -25,20 +25,16 @@
     Please REMOVE this comment before publishing your game on BGA
 -->
 
-
 This is your game interface. You can edit this HTML in your ".tpl" file.
 
-
 <script type="text/javascript">
+  // Javascript HTML templates
 
-// Javascript HTML templates
-
-/*
+  /*
 // Example:
 var jstpl_some_game_item='<div class="my_game_item" id="my_game_item_${MY_ITEM_ID}"></div>';
 
 */
-
-</script>  
+</script>
 
 {OVERALL_GAME_FOOTER}

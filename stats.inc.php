@@ -3,7 +3,7 @@
 /**
  *------
  * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
- * GlaceEtCiel implementation : © <Your name here> <Your email address here>
+ * GlaceEtCiel implementation : © <Alexandre Spaeth> <alexandre[at]spaeth.dev>
  *
  * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
  * See http://en.boardgamearena.com/#!doc/Studio for more information.
@@ -47,16 +47,16 @@
     
 */
 
-$stats_type = array(
+$stats_type = [
+  // Statistics global to table
+  "table" => [
+    "turns_number" => [
+      "id" => 10,
+      "name" => totranslate("Number of turns"),
+      "type" => "int",
+    ],
 
-    // Statistics global to table
-    "table" => array(
-
-        "turns_number" => array("id"=> 10,
-                    "name" => totranslate("Number of turns"),
-                    "type" => "int" ),
-
-/*
+    /*
         Examples:
 
 
@@ -67,17 +67,18 @@ $stats_type = array(
         "table_teststat2" => array(   "id"=> 11,
                                 "name" => totranslate("table test stat 2"), 
                                 "type" => "float" )
-*/  
-    ),
-    
-    // Statistics existing for each player
-    "player" => array(
+*/
+  ],
 
-        "turns_number" => array("id"=> 10,
-                    "name" => totranslate("Number of turns"),
-                    "type" => "int" ),
-    
-/*
+  // Statistics existing for each player
+  "player" => [
+    "turns_number" => [
+      "id" => 10,
+      "name" => totranslate("Number of turns"),
+      "type" => "int",
+    ],
+
+    /*
         Examples:    
         
         
@@ -89,7 +90,6 @@ $stats_type = array(
                                 "name" => totranslate("player test stat 2"), 
                                 "type" => "float" )
 
-*/    
-    )
-
-);
+*/
+  ],
+];
